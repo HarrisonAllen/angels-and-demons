@@ -1,0 +1,123 @@
+{
+  "name": "angelic-ascent",
+  "author": "Harrison Allen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "displayName": "Angelic Ascent",
+    "uuid": "3d3ca54b-7ebf-4987-adb2-5ab3875607b3",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "capabilities": [
+      "configurable"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "TEMPERATURE",
+      "CONDITIONS",
+      "OpenWeatherAPIKey",
+      "AmericanDate"
+    ],
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "IMAGE_MENU_ICON",
+          "file": "img/menu_icon.png"
+        },
+        {
+          "name": "FONT_TIME_42", 
+          "characterRegex": "[0-9:]", 
+          "file": "font/font.ttf", 
+          "type": "font", 
+          "compatibility": "2.7"
+        },
+        {
+          "name": "FONT_DATE_20", 
+          "characterRegex": "[0-9:A-Za-z ]", 
+          "file": "font/font.ttf", 
+          "type": "font", 
+          "compatibility": "2.7"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_WINGS", 
+            "file": "img/wings.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_ENTITY", 
+            "file": "img/entity.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_BATTERY", 
+            "file": "img/battery.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_BATTERY_METER", 
+            "file": "img/battery_meter.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_CHARGING_METER", 
+            "file": "img/battery_meter_charging.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_TEMP_BAR", 
+            "file": "img/temp_bar.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_TEMP_SLIDER", 
+            "file": "img/temp_slider.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_CLOUD", 
+            "file": "img/w_cloud.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_PART_SUN", 
+            "file": "img/w_part_sun.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_RAIN", 
+            "file": "img/w_rain.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_SNOW", 
+            "file": "img/w_snow.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_STORM", 
+            "file": "img/w_storm.png"
+        },
+        {
+            "type": "bitmap", 
+            "name": "IMAGE_W_SUN", 
+            "file": "img/w_sun.png"
+        }
+      ]
+    }
+  }
+}
